@@ -7,7 +7,7 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap');*/
 
 .header{
- background: url(bg.png);
+ background: url(image/bg.png);
  position: absolute;
  width: 1438px;
  height: 769px;
@@ -50,7 +50,7 @@
  color: #FFFFFF;
  }
  .headerLogo{
- background:url(logo.png);
+ background:url(image/logo.png);
  position:absolute;
  width: 101.62px;
  height: 23px;
