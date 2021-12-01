@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="content__header">
+        <img class="content__header-logo" src="./image/logo.png" alt="" />
+        <div class="content__header-center">
+          <h2>PARTNER WITH KONSTUCT</h2>
+          <p>An award-winning construction management firm</p>
+        </div>
+        <p class="content__header-scroll">SCROLL DOWN</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  height: 3000px;
+  background: red;
+  font-family: "Open Sans";
+}
+.content__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 41px 0 71px 0;
+  width: 100%;
+  height: 100vh;
+  background: green;
+  background: url(./image/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  color: #fff;
+}
+.content__header-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__header-center > h2 {
+  font-family: Arial;
+  font-size: 50px;
+}
+.content__header-scroll{
+  cursor: pointer;
+  letter-spacing: 5px;
+}
