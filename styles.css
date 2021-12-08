@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box; /*Свойства width и height  включают в себя 
@@ -17,7 +18,7 @@
   flex-direction: column; /*главная ось стала вертикальной*/
   justify-content: space-between; /*выравнивание блоков с обинаковыми отступами между*/
   width: 100%;
-  height: 115vh; /*область просмотра браузера*/
+  height: 100vh; /*область просмотра браузера*/
   background-position-x: center; /*позиционирование фона - следующие 4 строки*/
   background-position-y: center;
   background-size: cover;
@@ -115,7 +116,7 @@
   justify-content: space-between;
   width: 406px;
   text-align: left;
-  letter-spacing: 1px;
+  
   line-height: 23px;
   font-size: 13px;
   letter-spacing: 0.1875px;
@@ -243,16 +244,17 @@ letter-spacing: 0.2px;
   text-align: center;
   width: 100%;
   height: 100vh;
+  background-position-x: center; /*позиционирование фона - следующие 4 строки*/
+  background-position-y: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background: url(image/getin.png);
+  background-color: aqua;
 }
 .text {
   font-size: 30px;
-
-  padding: 30px;
- 
-  
+  padding-bottom: 30px;
   letter-spacing: 0.15px;
-  font-family: OpenSans;
   color: #48555b;
 }
 .signup {
@@ -265,12 +267,11 @@ letter-spacing: 0.2px;
   background-color: #171819;
 }
 .signup__text {
+  display: flex;
   font-size: 22px;
   line-height: 26px;
-  display: flex;
   letter-spacing: 0.846154px;
   color: #ffffff;
-  font-family: OpenSans;
 }
 .signup__inputbuttom {
   display: flex;
@@ -280,19 +281,20 @@ letter-spacing: 0.2px;
 }
 .signup__input {
   height: 40px;
-  left: 286px;
-  top: 0px;
   width: 250px;
   background: #ffffff;
   border: 1px solid #979797;
-  box-sizing: border-box;
+  
 }
-
+.signup__input:focus{
+  outline: none;
+}
 .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 240px;
+  color: #ffffff;
   background-color: #141a20;
 }
 .footer__1 {
@@ -301,27 +303,22 @@ letter-spacing: 0.2px;
   justify-content: space-between;
   align-items: flex-start;
   height: 148px;
-  background-color: crimson;
+
 }
 .footer__1__h {
   display: flex;
-  font-family: OpenSans;
   font-size: 11px;
   line-height: 13px;
-
   letter-spacing: 0.846154px;
-
-  color: #ffffff;
 }
 .footer__1__text {
-  width: 250px;
-  font-family: OpenSans;
-  font-size: 11px;
-  line-height: 19px;
   display: flex;
   align-items: center;
+  width: 250px;
+  font-size: 11px;
+  line-height: 19px;
+  
   letter-spacing: 0.85px;
-  color: #ffffff;
 }
 .footer__2 {
   display: flex;
@@ -329,55 +326,43 @@ letter-spacing: 0.2px;
   justify-content: center;
   align-items: flex-start;
 
-  background-color: rgb(255, 0, 0);
+  
 }
 .footer__3_punkts{
-  height: 75px;
-  width: 100px;
-  font-family: OpenSans;
-  font-size: 11px;
   display: flex;
   flex-direction: column;
   align-content: space-around;
   justify-content: space-around;
   align-items: flex-start;
-  background-color: darkblue;
-
-
-
+  height: 75px;
+  width: 100px;
+  font-size: 11px;
+ 
 }
 .footer__2_h {
-  
+  display: flex;
   font-size: 11px;
   line-height: 13px;
-  display: flex;
-
   letter-spacing: 0.846154px;
-
-  color: #ffffff;
 }
 .footer__2_columns {
   display: flex;
-  height: 148px;
   flex-direction: row;
   align-content: space-between;
-  background-color: darkorange;
   align-items: center;
+  height: 148px;
+ 
 }
 .footer__2_punkts {
-  height: 148px;
-  width: 100px;
-  font-family: OpenSans;
-  font-size: 11px;
   display: flex;
   flex-direction: column;
   align-content: space-around;
   justify-content: space-around;
   align-items: flex-start;
-  background-color: darkgreen;
+  height: 148px;
+  width: 100px;
+  font-size: 11px;
   letter-spacing: 0.846154px;
-
-  color: #ffffff;
 }
 
 .company {
@@ -386,9 +371,7 @@ letter-spacing: 0.2px;
   align-items: center;
   padding: 25px;
   font-size: 11px;
-  line-height: 13px;
   letter-spacing: 0.846154px;
-
   color: #ffffff;
   background-color: #171819;
 }
